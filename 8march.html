@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-наурыз мерекесіне құттықтау</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2;
+            padding: 50px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        h1 {
+            color: #d63384;
+        }
+        .invite {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #ff99cc;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background: #d63384;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #b82e6f;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Құрметті 11А сынып қыздары!</h1>
+        <p>Сіздерді 8-наурыз мерекесімен құттықтаймыз!</p>
+        <p>Келіп жеткен мерекелеріңізбен!</p>
+        <button onclick="showInvite()">💐💐💐</button>
+        <div class="invite" id="inviteText">
+            <img src="ФОТОООО 11А.jpeg" alt="Балапандар">
+            <p>Сіздерді көктемнің шуақты мерекесі – 8 Наурыз Халықаралық әйелдер күнімен шын жүректен құттықтаймын!💐<
+            </p>
+              <p>Сіздер – сұлулық пен нәзіктіктің, мейірім мен ізгіліктің шуағын шашқан жансыздар🌝. Әр күніңіз қуанышқа, жүрегіңіз махаббат пен шаттыққа толы болсын!🌸</p>  
+            <p>Бақытты өмір, мықты денсаулық, шексіз сүйіспеншілік пен сәттілік тілеймін!🥂🎀🎉
+                Көктемнің әрбір күні сіздерге тек қуаныш пен жылулық сыйласын!
+            </p>
+            <p>
+                Мерекелеріңіз құтты болсын!🎉🌸
+            </p>
+        </div>
+    </div>
+
+    <!-- Музыка -->
+    <audio id="backgroundMusic" loop>
+        <source src="https://files.catbox.moe/5g0ur7.mp3" type="audio/mpeg">
+        Сіздің браузеріңіз бұл аудионы қолдамайды.
+    </audio>
+
+    <script>
+        function showInvite() {
+            document.getElementById("inviteText").style.display = "block";
+            document.getElementById("backgroundMusic").play();
+        }
+    </script>
+
+</body>
+</html>
