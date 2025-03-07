@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 Марта!</title>
+    <link rel="stylesheet" href="8maaart.css">
+</head>
+<body>
+    <div class="invite">
+        <h1>С 8 Марта!</h1>
+        <p>Құрметті 11А сынып қыздары келіп еткен мейрамдарымен құттықтаймыз!</p>
+        <p>Армандарың мен жетістіктерге жете беріңдер!</p>
+        <button class="btn" onclick="playMusic()">Праздничное настроение</button>
+    </div>
+
+    <audio id="bg-music">
+        <source src="c:\Users\77777\Downloads\Mitski - My Love Mine All Mine.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function playMusic() {
+            document.getElementById("bg-music").play();
+            alert("Музыка включена!");
+        }
+    </script>
+</body>
+</html>
